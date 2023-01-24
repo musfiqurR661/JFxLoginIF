@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myfirstfx.helloworld.Controlar">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="296.0" style="-fx-background-color: #a3c1ad;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="170.0" fitWidth="155.0" layoutX="71.0" layoutY="95.0">
+               <image>
+                  <Image url="@adventure.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="label1" layoutX="5.0" layoutY="281.0" prefHeight="79.0" prefWidth="287.0" textFill="#3c0404">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="310.0" style="-fx-background-color: #bfafb2;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="34.0" layoutY="55.0" prefHeight="59.0" prefWidth="237.0" text="Welcome to the MR World.." textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="38.0" layoutX="15.0" layoutY="14.0">
+               <image>
+                  <Image url="@treasure-map.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="53.0" layoutY="159.0" prefHeight="25.0" prefWidth="211.0" promptText="User Name" style="-fx-background-radius: 50;" />
+            <TextField layoutX="51.0" layoutY="209.0" prefHeight="25.0" prefWidth="215.0" promptText="Password" style="-fx-background-radius: 50;" />
+            <Button layoutX="53.0" layoutY="255.0" mnemonicParsing="false" onAction="#loginClick" style="-fx-background-radius: 40; -fx-background-color: #458b74;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Button layoutX="53.0" layoutY="321.0" mnemonicParsing="false" style="-fx-background-radius: 60; -fx-background-color: #89cff0;" text="Sign Up" textFill="#fffb7b">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Label layoutX="53.0" layoutY="285.0" prefHeight="20.0" prefWidth="238.0" text="haven't any account yet?" textAlignment="CENTER" textFill="#6f5f5f">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
